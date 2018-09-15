@@ -233,12 +233,12 @@ def version_two_multi_d(server_data):
 
 
 def run_driver():
-    # data_small = read_matlab_data('data/server_latency_throughput.mat')
+    data_small = read_matlab_data('data/server_latency_throughput.mat')
     data_large = read_matlab_data('data/larger_data_set.mat')
     # version_one_2d(data_small)
     # version_one_multi_d(data_large)
-    # version_two_2d(data_small)
-    version_two_multi_d(data_large)
+    version_two_2d(data_small)
+    # version_two_multi_d(data_large)
 
 
 if __name__ == "__main__":
