@@ -203,7 +203,7 @@ def version_two_multi_d(server_data):
 
     X = server_data.get('X')
     x_transpose = np.transpose(X)
-    print(x_transpose.shape)
+    print("Shape of unlabeled data: ",x_transpose.shape)
     # N samples are now in column vectors with k feature rows
     # compute the means of the rows which hold the same features
     # mu should be a column vector of length k (k = number of features)
@@ -237,8 +237,8 @@ def run_driver():
     data_large = read_matlab_data('data/larger_data_set.mat')
     # version_one_2d(data_small)
     # version_one_multi_d(data_large)
-    version_two_2d(data_small)
-    # version_two_multi_d(data_large)
+    # version_two_2d(data_small)
+    version_two_multi_d(data_large)
 
 
 if __name__ == "__main__":
