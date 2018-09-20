@@ -198,6 +198,7 @@ def version_two_2d(server_data):
     plt.plot(plot1, plot2, 'ro', mfc='none', linewidth=2, markersize=10)
     plt.show()
 
+
 def version_two_multi_d(server_data):
 
     X = server_data.get('X')
@@ -237,8 +238,8 @@ def run_driver():
     # version_one_2d(data_small)
     # version_one_multi_d(data_large)
     # version_two_2d(data_small)
-    version_two_multi_d(data_large)
-
+    # version_two_multi_d(data_large)
+    
 
 if __name__ == "__main__":
     run_driver()
